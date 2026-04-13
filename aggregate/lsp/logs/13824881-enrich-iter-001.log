@@ -1,0 +1,150 @@
+[2026-04-12T23:25:57Z] === ENRICH ITERATION 1 START | repo=psycopg/psycopg sha=13824881 ===
+[2026-04-12T23:25:57Z] [iter=1] PHASE START: enrich repo=psycopg/psycopg sha=13824881 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/13824881-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/13824881c5dd715b73f5873c1a773b35d5f2b8e5.nq.gz
+[2026-04-12T23:25:57Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-12T23:26:18Z] [iter=1] AST store loaded triples=2693895 load_secs=20 mem_mb=873 MB
+[2026-04-12T23:26:18Z] [iter=1] Step 2: Finding LSP targets mem_mb=873 MB
+[2026-04-12T23:26:22Z] [iter=1] LSP targets found call_sites=21954 imports=1202 extends=607 implements=0 secs=4
+[2026-04-12T23:26:25Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=873 MB
+[2026-04-12T23:26:40Z] [iter=1] Position index built positions=179308 nodes_with_types=231052 secs=14 mem_mb=873 MB
+[2026-04-12T23:26:40Z] [iter=1] Step 3: Starting LSP resolution mem_mb=873 MB already_completed_types=[] already_completed_files=0
+[2026-04-12T23:26:40Z] [iter=1] Resolving target type target_type=call_site count=21954
+[2026-04-12T23:26:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=tests/test_connection_async.py
+[2026-04-12T23:31:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.5 files_done=1 resolved=60 errors=263 current=psycopg/psycopg/pq/_enums.py
+[2026-04-12T23:32:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=3 resolved=156 errors=348 current=tests/types/test_json.py
+[2026-04-12T23:34:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.4 files_done=4 resolved=190 errors=428 current=psycopg/psycopg/postgres.py
+[2026-04-12T23:35:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.1 files_done=6 resolved=194 errors=462 current=tests/pq/test_escaping.py
+[2026-04-12T23:35:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.7 files_done=7 resolved=205 errors=498 current=psycopg/psycopg/types/multirange.py
+[2026-04-12T23:36:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.8 files_done=8 resolved=245 errors=560 current=tests/scripts/bench-411.py
+[2026-04-12T23:38:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=9 resolved=283 errors=682 current=tests/types/test_datetime.py
+[2026-04-12T23:42:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.9 files_done=10 resolved=335 errors=899 current=tests/test_cursor_common_async.py
+[2026-04-12T23:49:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.1 files_done=11 resolved=370 errors=1247 current=psycopg/psycopg/_dns.py
+[2026-04-12T23:49:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=12 resolved=397 errors=1293 current=tests/crdb/test_cursor.py
+[2026-04-12T23:52:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.2 files_done=14 resolved=500 errors=1422 current=psycopg/psycopg/_pipeline_base.py
+[2026-04-12T23:57:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.5 files_done=16 resolved=559 errors=1718 current=tests/dbapi20.py
+[2026-04-13T00:02:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.6 files_done=17 resolved=624 errors=2005 current=tests/pool/test_pool_async_noasyncio.py
+[2026-04-13T00:09:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.6 files_done=19 resolved=701 errors=2398 current=tests/test_copy.py
+[2026-04-13T00:16:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.8 files_done=20 resolved=774 errors=2801 current=tests/test_waiting.py
+[2026-04-13T00:18:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.5 files_done=21 resolved=818 errors=2901 current=tests/pq/test_pgresult.py
+[2026-04-13T00:20:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.2 files_done=22 resolved=826 errors=2991 current=psycopg/psycopg/types/datetime.py
+[2026-04-13T00:21:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.8 files_done=23 resolved=947 errors=3085 current=tests/crdb/test_copy.py
+[2026-04-13T00:23:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.6 files_done=24 resolved=962 errors=3182 current=tests/test_pipeline_async.py
+[2026-04-13T00:28:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.1 files_done=25 resolved=991 errors=3437 current=tests/test_notify_async.py
+[2026-04-13T00:30:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.3 files_done=26 resolved=1021 errors=3562 current=tests/test_copy_async.py
+[2026-04-13T00:37:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.8 files_done=27 resolved=1080 errors=3981 current=tests/test_pipeline.py
+[2026-04-13T00:42:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.4 files_done=28 resolved=1107 errors=4238 current=tests/test_tpc.py
+[2026-04-13T00:44:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.8 files_done=29 resolved=1113 errors=4369 current=tests/test_cursor_common.py
+[2026-04-13T00:50:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.7 files_done=30 resolved=1161 errors=4704 current=psycopg/psycopg/cursor_async.py
+[2026-04-13T00:51:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.5 files_done=31 resolved=1166 errors=4750 current=psycopg/psycopg/_queries.py
+[2026-04-13T00:52:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.4 files_done=32 resolved=1207 errors=4801 current=tests/test_adapt.py
+[2026-04-13T00:56:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.9 files_done=33 resolved=1241 errors=5052 current=tests/pool/test_pool_async.py
+[2026-04-13T01:03:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.5 files_done=34 resolved=1309 errors=5423 current=psycopg/psycopg/connection_async.py
+[2026-04-13T01:04:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.8 files_done=35 resolved=1333 errors=5494 current=psycopg_pool/psycopg_pool/pool_async.py
+[2026-04-13T01:07:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.6 files_done=36 resolved=1394 errors=5652 current=tests/test_cursor_server.py
+[2026-04-13T01:12:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.2 files_done=37 resolved=1424 errors=5911 current=tests/pq/test_async.py
+[2026-04-13T01:13:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.7 files_done=38 resolved=1432 errors=5999 current=tools/async_to_sync.py
+[2026-04-13T01:15:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.6 files_done=39 resolved=1474 errors=6105 current=tests/types/test_composite.py
+[2026-04-13T01:17:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.4 files_done=40 resolved=1517 errors=6202 current=tests/test_waiting_async.py
+[2026-04-13T01:19:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.1 files_done=41 resolved=1561 errors=6302 current=tests/_test_cursor.py
+[2026-04-13T01:20:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.4 files_done=43 resolved=1620 errors=6370 current=tests/scripts/spiketest.py
+[2026-04-13T01:21:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.9 files_done=45 resolved=1654 errors=6456 current=tests/types/test_range.py
+[2026-04-13T01:23:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.5 files_done=46 resolved=1703 errors=6544 current=psycopg/psycopg/conninfo.py
+[2026-04-13T01:27:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.1 files_done=48 resolved=1739 errors=6744 current=tests/pool/test_pool_null_async.py
+[2026-04-13T01:30:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.3 files_done=49 resolved=1753 errors=6924 current=tests/test_transaction.py
+[2026-04-13T01:35:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.2 files_done=50 resolved=1767 errors=7199 current=tests/types/test_multirange.py
+[2026-04-13T01:36:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.3 files_done=51 resolved=1800 errors=7262 current=tests/test_connection.py
+[2026-04-13T01:40:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.0 files_done=52 resolved=1860 errors=7525 current=tests/pq/test_exec.py
+[2026-04-13T01:41:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.0 files_done=53 resolved=1860 errors=7582 current=tests/crdb/test_copy_async.py
+[2026-04-13T01:43:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.8 files_done=54 resolved=1875 errors=7680 current=tests/pool/test_pool_null.py
+[2026-04-13T01:46:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.0 files_done=55 resolved=1889 errors=7861 current=tests/pool/test_pool_common.py
+[2026-04-13T01:51:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.9 files_done=56 resolved=1946 errors=8134 current=psycopg/psycopg/_server_cursor.py
+[2026-04-13T01:53:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.7 files_done=58 resolved=2006 errors=8235 current=tests/test_conninfo.py
+[2026-04-13T01:55:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.3 files_done=61 resolved=2029 errors=8322 current=psycopg/psycopg/errors.py
+[2026-04-13T01:56:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.8 files_done=62 resolved=2047 errors=8405 current=tests/test_cursor_server_async.py
+[2026-04-13T02:01:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=155.5 files_done=63 resolved=2072 errors=8667 current=tests/fix_faker.py
+[2026-04-13T02:04:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=158.5 files_done=64 resolved=2254 errors=8833 current=psycopg/psycopg/generators.py
+[2026-04-13T02:05:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=159.2 files_done=65 resolved=2262 errors=8876 current=psycopg/psycopg/_cursor_base.py
+[2026-04-13T02:06:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.4 files_done=66 resolved=2272 errors=8939 current=tests/test_concurrency.py
+[2026-04-13T02:08:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=162.1 files_done=67 resolved=2345 errors=9037 current=tests/test_cursor_client_async.py
+[2026-04-13T02:08:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=163.0 files_done=68 resolved=2351 errors=9084 current=psycopg/psycopg/pq/pq_ctypes.py
+[2026-04-13T02:10:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.0 files_done=69 resolved=2510 errors=9198 current=psycopg/psycopg/_tpc.py
+[2026-04-13T02:11:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.6 files_done=71 resolved=2551 errors=9231 current=psycopg/psycopg/types/numpy.py
+[2026-04-13T02:12:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=166.2 files_done=72 resolved=2555 errors=9261 current=tests/test_prepared.py
+[2026-04-13T02:13:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=167.7 files_done=73 resolved=2589 errors=9347 current=tests/fix_gc.py
+[2026-04-13T02:14:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=168.2 files_done=75 resolved=2602 errors=9377 current=psycopg/psycopg/_typeinfo.py
+[2026-04-13T02:14:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=168.9 files_done=76 resolved=2619 errors=9414 current=tests/test_errors.py
+[2026-04-13T02:15:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=170.0 files_done=77 resolved=2644 errors=9474 current=tests/types/test_net.py
+[2026-04-13T02:16:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=170.8 files_done=78 resolved=2655 errors=9517 current=tests/test_notify.py
+[2026-04-13T02:18:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=172.9 files_done=79 resolved=2690 errors=9637 current=tests/fix_pq.py
+[2026-04-13T02:19:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=173.6 files_done=81 resolved=2704 errors=9674 current=psycopg/psycopg/types/hstore.py
+[2026-04-13T02:20:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=174.4 files_done=82 resolved=2722 errors=9718 current=tests/types/test_numeric.py
+[2026-04-13T02:22:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=176.5 files_done=83 resolved=2810 errors=9835 current=tools/build/pg_config_vcpkg_stub/pg_config_vcpkg_stub/__init__.py
+[2026-04-13T02:24:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=178.3 files_done=85 resolved=2841 errors=9935 current=tests/test_transaction_async.py
+[2026-04-13T02:29:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=183.2 files_done=86 resolved=2855 errors=10210 current=psycopg/psycopg/_pipeline.py
+[2026-04-13T02:32:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=186.1 files_done=88 resolved=2912 errors=10372 current=tests/test_conninfo_attempts.py
+[2026-04-13T02:32:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=186.6 files_done=90 resolved=2930 errors=10400 current=tests/test_concurrency_async.py
+[2026-04-13T02:33:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=187.9 files_done=91 resolved=2984 errors=10472 current=psycopg/psycopg/connection.py
+[2026-04-13T02:35:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=189.1 files_done=92 resolved=3005 errors=10539 current=tests/crdb/test_conninfo.py
+[2026-04-13T02:36:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=190.9 files_done=95 resolved=3067 errors=10640 current=psycopg_pool/psycopg_pool/sched_async.py
+[2026-04-13T02:37:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=191.6 files_done=97 resolved=3085 errors=10682 current=tests/crdb/test_adapt.py
+[2026-04-13T02:39:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=193.2 files_done=99 resolved=3101 errors=10768 current=psycopg/psycopg/pq/_pq_ctypes.py
+[2026-04-13T02:39:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=193.8 files_done=100 resolved=3156 errors=10803 current=tests/types/test_bool.py
+[2026-04-13T02:40:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=194.6 files_done=102 resolved=3165 errors=10845 current=docs/lib/libpq_docs.py
+[2026-04-13T02:41:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=195.1 files_done=103 resolved=3175 errors=10875 current=tests/types/test_hstore.py
+[2026-04-13T02:42:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=196.3 files_done=105 resolved=3227 errors=10939 current=psycopg/psycopg/types/composite.py
+[2026-04-13T02:43:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=197.2 files_done=106 resolved=3271 errors=10991 current=tests/test_cursor_raw_async.py
+[2026-04-13T02:43:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=197.8 files_done=107 resolved=3275 errors=11024 current=psycopg/psycopg/pq/misc.py
+[2026-04-13T02:44:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=198.6 files_done=109 resolved=3313 errors=11069 current=tests/test_generators.py
+[2026-04-13T02:45:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=199.2 files_done=110 resolved=3334 errors=11105 current=tools/update_errors.py
+[2026-04-13T02:45:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=200.0 files_done=111 resolved=3368 errors=11147 current=psycopg/psycopg/_column.py
+[2026-04-13T02:48:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=202.1 files_done=113 resolved=3405 errors=11263 current=tests/pq/test_misc.py
+[2026-04-13T02:48:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=202.6 files_done=115 resolved=3411 errors=11293 current=tests/test_psycopg_dbapi20.py
+[2026-04-13T02:49:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=203.4 files_done=117 resolved=3417 errors=11335 current=psycopg/psycopg/_acompat.py
+[2026-04-13T02:50:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=204.9 files_done=122 resolved=3494 errors=11423 current=tests/crdb/test_connection_async.py
+[2026-04-13T02:51:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=205.7 files_done=124 resolved=3502 errors=11465 current=psycopg/psycopg/transaction.py
+[2026-04-13T02:54:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=208.5 files_done=128 resolved=3517 errors=11623 current=psycopg/psycopg/_conninfo_attempts.py
+[2026-04-13T02:55:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=209.7 files_done=130 resolved=3559 errors=11691 current=tests/dbapi20_tpc.py
+[2026-04-13T02:56:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=211.0 files_done=131 resolved=3561 errors=11760 current=tools/update_oids.py
+[2026-04-13T02:57:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=212.0 files_done=132 resolved=3577 errors=11815 current=tests/test_cursor_client.py
+[2026-04-13T02:58:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=212.8 files_done=133 resolved=3583 errors=11862 current=psycopg/psycopg/_preparing.py
+[2026-04-13T03:00:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=214.7 files_done=135 resolved=3626 errors=11970 current=psycopg/psycopg/types/enum.py
+[2026-04-13T03:01:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=215.3 files_done=136 resolved=3650 errors=12000 current=psycopg/psycopg/_conninfo_attempts_async.py
+[2026-04-13T03:02:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=216.0 files_done=138 resolved=3672 errors=12043 current=psycopg_pool/psycopg_pool/null_pool.py
+[2026-04-13T03:02:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=216.9 files_done=140 resolved=3716 errors=12089 current=psycopg/psycopg/crdb/connection.py
+[2026-04-13T03:03:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=217.6 files_done=142 resolved=3745 errors=12130 current=tools/update_error_prefixes.py
+[2026-04-13T03:04:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=218.2 files_done=144 resolved=3764 errors=12161 current=tests/test_cursor.py
+[2026-04-13T03:04:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=218.7 files_done=145 resolved=3769 errors=12191 current=psycopg/psycopg/pq/_debug.py
+[2026-04-13T03:05:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=219.9 files_done=147 resolved=3793 errors=12255 current=tools/build/copy_to_binary.py
+[2026-04-13T03:06:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=220.5 files_done=150 resolved=3835 errors=12290 current=psycopg/psycopg/types/net.py
+[2026-04-13T03:07:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=221.1 files_done=151 resolved=3860 errors=12323 current=tests/typing_example.py
+[2026-04-13T03:07:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=222.0 files_done=152 resolved=3862 errors=12374 current=psycopg/psycopg/dbapi20.py
+[2026-04-13T03:09:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=223.1 files_done=156 resolved=3912 errors=12434 current=tests/test_column.py
+[2026-04-13T03:09:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=223.6 files_done=157 resolved=3923 errors=12463 current=tests/test_cursor_raw.py
+[2026-04-13T03:10:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=224.2 files_done=158 resolved=3927 errors=12496 current=tests/types/test_shapely.py
+[2026-04-13T03:10:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=225.0 files_done=160 resolved=3943 errors=12544 current=tests/types/test_uuid.py
+[2026-04-13T03:11:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=225.8 files_done=164 resolved=3962 errors=12585 current=tests/scripts/copytest.py
+[2026-04-13T03:12:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=226.4 files_done=165 resolved=3983 errors=12621 current=psycopg/psycopg/waiting.py
+[2026-04-13T03:13:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=227.3 files_done=166 resolved=4019 errors=12668 current=psycopg/psycopg/cursor.py
+[2026-04-13T03:14:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=228.1 files_done=167 resolved=4024 errors=12714 current=psycopg/psycopg/_copy_async.py
+[2026-04-13T03:14:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=228.6 files_done=168 resolved=4037 errors=12742 current=psycopg_pool/psycopg_pool/base.py
+[2026-04-13T03:15:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=229.4 files_done=171 resolved=4073 errors=12785 current=tests/test_connection_info.py
+[2026-04-13T03:16:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=230.5 files_done=172 resolved=4090 errors=12846 current=tests/scripts/dectest.py
+[2026-04-13T03:17:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.8 files_done=177 resolved=4105 errors=12921 current=psycopg/psycopg/adapt.py
+[2026-04-13T03:18:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=232.7 files_done=180 resolved=4147 errors=12971 current=psycopg/psycopg/types/uuid.py
+[2026-04-13T03:19:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=233.5 files_done=183 resolved=4164 errors=13015 current=psycopg/psycopg/_encodings.py
+[2026-04-13T03:20:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=234.4 files_done=185 resolved=4173 errors=13063 current=psycopg_c/setup.py
+[2026-04-13T03:20:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=234.9 files_done=188 resolved=4206 errors=13090 current=tests/crdb/test_cursor_async.py
+[2026-04-13T03:21:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=235.4 files_done=190 resolved=4215 errors=13119 current=psycopg/psycopg/_adapters_map.py
+[2026-04-13T03:22:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=236.1 files_done=195 resolved=4245 errors=13156 current=psycopg_pool/psycopg_pool/_acompat.py
+[2026-04-13T03:22:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=236.7 files_done=200 resolved=4268 errors=13189 current=tests/test_windows.py
+[2026-04-13T03:23:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=237.2 files_done=205 resolved=4291 errors=13220 current=tests/conftest.py
+[2026-04-13T03:23:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=237.8 files_done=209 resolved=4311 errors=13249 current=tests/pq/test_pq.py
+[2026-04-13T03:24:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=238.3 files_done=222 resolved=4332 errors=13277 current=psycopg/psycopg/abc.py
+[2026-04-13T03:24:49Z] [iter=1] Target type resolved target_type=call_site resolved=4348 errors=13308 secs=14289 mem_mb=873 MB
+[2026-04-13T03:24:49Z] [iter=1] Resolving target type target_type=import_statement count=1202
+[2026-04-13T03:24:49Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=238.9 files_done=0 resolved=0 errors=0 current=psycopg/psycopg/connection_async.py
+[2026-04-13T03:25:01Z] [iter=1] Target type resolved target_type=import_statement resolved=661 errors=0 secs=12 mem_mb=873 MB
+[2026-04-13T03:25:01Z] [iter=1] Resolving target type target_type=extends_clause count=607
+[2026-04-13T03:25:06Z] [iter=1] Target type resolved target_type=extends_clause resolved=491 errors=0 secs=4 mem_mb=873 MB
+[2026-04-13T03:25:20Z] [iter=1] Step 5: Writing final enrichment file triples=181158
+[2026-04-13T03:25:25Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/13824881c5dd715b73f5873c1a773b35d5f2b8e5.nq.gz size_kb=3940
+[2026-04-13T03:25:25Z] [iter=1] PHASE END: enrich elapsed_s=14368 elapsed_min=239.5 total_triples=181158
